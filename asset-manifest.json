@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b100e6da.chunk.css",
-    "main.js": "/static/js/main.85194082.chunk.js",
-    "main.js.map": "/static/js/main.85194082.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ce368418.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ce368418.js.map",
-    "static/js/2.e632a429.chunk.js": "/static/js/2.e632a429.chunk.js",
-    "static/js/2.e632a429.chunk.js.map": "/static/js/2.e632a429.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.20ef0e68cf5ab9c25b85f10e9dcf4fb6.js": "/precache-manifest.20ef0e68cf5ab9c25b85f10e9dcf4fb6.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/static/css/main.b100e6da.chunk.css.map",
-    "static/media/logo.svg": "/static/media/logo.25bf045c.svg"
+    "main.css": "/sequoia-cg-website/static/css/main.b100e6da.chunk.css",
+    "main.js": "/sequoia-cg-website/static/js/main.0e0c8be3.chunk.js",
+    "main.js.map": "/sequoia-cg-website/static/js/main.0e0c8be3.chunk.js.map",
+    "runtime-main.js": "/sequoia-cg-website/static/js/runtime-main.7c28cdac.js",
+    "runtime-main.js.map": "/sequoia-cg-website/static/js/runtime-main.7c28cdac.js.map",
+    "static/js/2.e632a429.chunk.js": "/sequoia-cg-website/static/js/2.e632a429.chunk.js",
+    "static/js/2.e632a429.chunk.js.map": "/sequoia-cg-website/static/js/2.e632a429.chunk.js.map",
+    "index.html": "/sequoia-cg-website/index.html",
+    "precache-manifest.cfcd5d89ef575a49b3d2c014033288d5.js": "/sequoia-cg-website/precache-manifest.cfcd5d89ef575a49b3d2c014033288d5.js",
+    "service-worker.js": "/sequoia-cg-website/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/sequoia-cg-website/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/sequoia-cg-website/static/media/logo.25bf045c.svg"
   }
 }
