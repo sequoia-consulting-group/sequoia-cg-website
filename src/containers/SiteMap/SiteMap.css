@@ -1,0 +1,64 @@
+.site-map-container {
+  display: flex;
+  height: 20vh;
+  width: 100%;
+  background-color: #5C510B;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.site-list-container {
+  width: 75%;
+}
+
+.site-list {
+  display: flex;
+  list-style-type: none;
+  padding-left: 16vw;
+}
+
+.site-list a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 16px 0 16px;
+}
+
+.site-list:first-child .site-list a {
+  padding-left: 0;
+}
+
+.between-list-item {
+  background-color: #ffffff;
+  height: 20px;
+  width: 2px;
+}
+
+.sequoia-logo-container {
+  width: 25%;
+}
+
+.sequoia-logo {
+  height: 15vh;
+  margin: 0 0 0 0;
+}
+
+.icons8-container {
+  position: absolute;
+  padding: 12vh 0 0 16vw;
+}
+
+.icons8 {
+  padding-left: 16px;
+  font-size: 8px;
+  color: #ffffff;
+  line-height: 8px;
+}
+
+.icons8-link {
+  font-size: 8px;
+  color: #ffffff;
+  text-decoration: none;
+}

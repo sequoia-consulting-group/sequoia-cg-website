@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  align-items: center;
+
+}
+
+.menu-button {
+  display: flex;
+  min-width: fit-content;
+  height: 80px;
+  padding: 0 2vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu .menu-button.active a {
+  color: #CFB53B;
+}
+
+.menu-button a {
+  font-family: 'Open Sans', sans-serif;
+  color: #055520;
+  font-weight: bold;
+  text-decoration: none;
+}

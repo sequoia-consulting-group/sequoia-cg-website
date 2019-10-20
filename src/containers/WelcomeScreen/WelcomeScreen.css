@@ -1,0 +1,73 @@
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+  width: 100vw;
+  margin-top: 80px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 75%),
+    rgba(0, 0, 0, 75%)
+  ),
+  url(../../images/SequoiaBackground.jpg);
+}
+
+.company-intro {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding: 2vh;
+  font-size: 4vh;
+}
+
+.welcome-logo {
+  height: 50vh;
+  align-items: center;
+}
+
+.more-info {
+  display: flex;
+  height: 10vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8vh 0 0 0;
+}
+
+.arrow {
+  border: solid #CFB53B;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.learn-more {
+  min-width: fit-content;
+  height: 6vh;
+  border-width: 4px;
+  border-color: #CFB53B;
+  padding: 0 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vh;
+  text-align: center;
+  color: #CFB53B;
+  background-color: rgba(200, 200, 200, 33%);
+}
+
+/* #learn-more:hover {
+  background-color: rgba(255, 0, 0, 1);
+} */
+
+/* #learn-more:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+} */

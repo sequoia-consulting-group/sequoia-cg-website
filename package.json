@@ -2,11 +2,13 @@
   "name": "sequoia-cg-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sequoia-consulting-group.github.io/",
+  "homepage": "http://sequoia-consulting-group.github.io/sequoia-cg-website",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.2"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.2",
+    "react-scroll": "^1.7.14"
   },
   "scripts": {
     "start": "react-scripts start",
