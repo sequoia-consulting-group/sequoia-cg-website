@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sequoia-cg-website/precache-manifest.cfcd5d89ef575a49b3d2c014033288d5.js"
+  "/sequoia-cg-website/precache-manifest.9ae9f5f31b588a42029f79ecc99f7104.js"
 );
 
 self.addEventListener('message', (event) => {
