@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dbf84ab1f943e805214878606b04bb48",
+    "revision": "07abb4a5483541974ad4b811b7102789",
     "url": "/sequoia-cg-website/index.html"
   },
   {
-    "revision": "22ad80eebed6e0da87da",
+    "revision": "188615108e50f4051fe7",
     "url": "/sequoia-cg-website/static/css/main.07797dfd.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sequoia-cg-website/static/js/2.8f79022e.chunk.js"
   },
   {
-    "revision": "22ad80eebed6e0da87da",
-    "url": "/sequoia-cg-website/static/js/main.6b3a3bbd.chunk.js"
+    "revision": "188615108e50f4051fe7",
+    "url": "/sequoia-cg-website/static/js/main.ef0624ee.chunk.js"
   },
   {
     "revision": "2f1c686a80a80c8cc61d",

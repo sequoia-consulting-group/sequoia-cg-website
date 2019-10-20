@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sequoia-cg-website/static/css/main.07797dfd.chunk.css",
-    "main.js": "/sequoia-cg-website/static/js/main.6b3a3bbd.chunk.js",
-    "main.js.map": "/sequoia-cg-website/static/js/main.6b3a3bbd.chunk.js.map",
+    "main.js": "/sequoia-cg-website/static/js/main.ef0624ee.chunk.js",
+    "main.js.map": "/sequoia-cg-website/static/js/main.ef0624ee.chunk.js.map",
     "runtime-main.js": "/sequoia-cg-website/static/js/runtime-main.7c28cdac.js",
     "runtime-main.js.map": "/sequoia-cg-website/static/js/runtime-main.7c28cdac.js.map",
     "static/js/2.8f79022e.chunk.js": "/sequoia-cg-website/static/js/2.8f79022e.chunk.js",
     "static/js/2.8f79022e.chunk.js.map": "/sequoia-cg-website/static/js/2.8f79022e.chunk.js.map",
     "index.html": "/sequoia-cg-website/index.html",
-    "precache-manifest.9ae9f5f31b588a42029f79ecc99f7104.js": "/sequoia-cg-website/precache-manifest.9ae9f5f31b588a42029f79ecc99f7104.js",
+    "precache-manifest.43fd9a13c3bb8927e4e1a7992a14e309.js": "/sequoia-cg-website/precache-manifest.43fd9a13c3bb8927e4e1a7992a14e309.js",
     "service-worker.js": "/sequoia-cg-website/service-worker.js",
     "static/css/main.07797dfd.chunk.css.map": "/sequoia-cg-website/static/css/main.07797dfd.chunk.css.map",
     "static/media/WelcomeScreen.css": "/sequoia-cg-website/static/media/SequoiaBackground.a1c648a2.jpg"
