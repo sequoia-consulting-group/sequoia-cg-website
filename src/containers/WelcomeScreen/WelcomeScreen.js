@@ -38,32 +38,32 @@ class WelcomeScreen extends Component {
             <ul className="learn-list">
               
               <div className="learn-list-item-container">
-                <img className="learn-list-icon" src="/images/icons/icons8-conference.png" alt="conference icon"/>
+                <img className="learn-list-icon" src="/images/icons8-conference.png" alt="conference icon"/>
                 <li className="learn-list-item">Duis at consectetur lorem donec massa sapien faucibus et molestie</li>
               </div>
 
               <div className="learn-list-item-container">
-                <img className="learn-list-icon" src="/images/icons/icons8-schedule.png" alt="schedule icon"/>
+                <img className="learn-list-icon" src="/images/icons8-schedule.png" alt="schedule icon"/>
                 <li className="learn-list-item">Id porta nibh venenatis cras sed felis eget velit aliquet</li>
               </div>
 
               <div className="learn-list-item-container">
-                <img className="learn-list-icon" src="/images/icons/icons8-collaboration.png" alt="collaboration icon"/>
+                <img className="learn-list-icon" src="/images/icons8-collaboration.png" alt="collaboration icon"/>
                 <li className="learn-list-item">Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae</li>
               </div>
 
               <div className="learn-list-item-container">
-                <img className="learn-list-icon" src="/images/icons/icons8-todo-list.png" alt="todo-list icon"/>
+                <img className="learn-list-icon" src="/images/icons8-todo-list.png" alt="todo-list icon"/>
                 <li className="learn-list-item">Gravida arcu ac tortor dignissim convallis aenean et tortor at</li>
               </div>
 
               <div className="learn-list-item-container">
-                <img className="learn-list-icon" src="/images/icons/icons8-account.png" alt="account icon"/>
+                <img className="learn-list-icon" src="/images/icons8-account.png" alt="account icon"/>
                 <li className="learn-list-item">Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros</li>
               </div>
 
               <div className="learn-list-item-container">
-                <img className="learn-list-icon" src="/images/icons/icons8-goal.png" alt="goal icon"/>
+                <img className="learn-list-icon" src="/images/icons8-goal.png" alt="goal icon"/>
                 <li className="learn-list-item">Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt</li>
               </div>
             </ul>
