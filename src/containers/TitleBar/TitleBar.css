@@ -37,3 +37,23 @@
   height: 20px;
   padding: 4px 0;
 }
+
+@media only screen and (max-width: 800px){
+  .titlebar {
+    height: 64px;
+  }
+
+  .logo-container {
+    width: auto;
+    height: 64px;
+  }
+
+  #logo-tree {
+    height: 60px;
+    padding: 4px 0 0 8px
+  }
+
+  .logo-name{
+    width: 66%;
+  }
+}

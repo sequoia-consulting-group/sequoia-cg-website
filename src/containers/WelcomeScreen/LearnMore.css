@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 85vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
 }
 
@@ -11,14 +11,48 @@
   flex: 1;
 }
 
+.learn-profile-container {
+  padding: 0;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
+.learn-profile-card {
+  max-width: 80%;
+  padding: 0 2%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.learn-profile-photo {
+  max-width: 80%;
+  max-height: 40vh;
+  height: auto;
+  margin: auto;
+  box-shadow: -4px 4px 8px #055520;
+}
+
+.learn-profile-name {
+  text-align: center;
+}
+
+.learn-profile-title {
+  text-align: center;
+}
+
 .learn-title-container {
-  margin: 4vh 0 2vh 0;
+  max-width: 66%;
+  margin: 4vh 0;
 }
 
 .learn-title {
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
-  margin: 2vh 0 0 0;
+  margin: 0 0 0 0;
+  text-align: center;
 }
 
 .learn-title-underline {
@@ -28,28 +62,33 @@
 
 .learn-paragraph-container {
   font-family: 'Open Sans', sans-serif;
-  padding: 2vh 16vw;
+  max-width: 80%;
+  padding: 2vh 0;
   font-size: 20px;
   display: flex;
+  justify-content: space-between;
 }
 
 .learn-about-paragraph {
-  padding: 0 2vw 0 0;
+  padding: 0;
   width: 50%;
-  margin: auto;
+  margin: auto 0;
   line-height: 30px;
 }
 
 .learn-about-photo {
-  width: 50%;
+  max-width: 50%;
   max-height: 30vh;
-  margin: auto;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: -4px 4px 8px #055520;
 }
 
 .learn-list-container {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  padding: 0 16vw
+  padding: 0 0;
+  max-width: 80%;
 }
 
 .learn-list {
@@ -67,10 +106,42 @@
 }
 
 .learn-list-icon {
-  min-width: 100px;
-  max-height: 100px;
+  min-width: 32px;
+  max-height: 32x;
+  color: rgba(200, 200, 0, 0.54);
 }
 
 .learn-list-item {
-  margin: auto 0 auto 2vw;
+  margin: auto 0 auto 1vw;
+}
+
+@media only screen and (max-width: 800px){
+  .learn-title-container {
+    margin: 2vh 0;
+  }
+  
+  .learn-paragraph-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .learn-about-paragraph {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .learn-about-photo {
+    max-width: 100%;
+    margin: 4vh auto;
+  }
+
+  .learn-list {
+    flex-direction: column;
+  }
+
+  .learn-list-item-container {
+    padding: 1vh 0;
+    width: 100%;
+  }
 }

@@ -1,9 +1,9 @@
-.welcome-screen {
+/* .welcome-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 95vh;
-  width: 100vw;
+  width: 100%;
   margin-top: 80px;
   position: relative;
   background-position: center;
@@ -11,21 +11,45 @@
   background-size: cover;
   overflow: hidden;
   background-image: linear-gradient(
-    rgba(0, 0, 0, 75%),
-    rgba(0, 0, 0, 75%)
+    rgba(0, 0, 0, 33%),
+    rgba(0, 0, 0, 33%)
   ),
-  url(../../images/SequoiaBackground.jpg);
+  url(../../images/SequoiaBackground720.jpg);
+} */
+
+.welcome-screen { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+  width: 100%;
+  margin-top: 80px;
+  background:  linear-gradient(
+    rgba(0, 0, 0, 33%),
+    rgba(0, 0, 0, 33%)
+  ), url(../../images/SequoiaBackground.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* IE */
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/SequoiaBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/SequoiaBackground.jpg', sizingMethod='scale')";
 }
 
 .company-intro {
   font-family: 'Open Sans', sans-serif;
-  color: white;
-  padding: 2vh;
-  font-size: 4vh;
+  color: #ffffff;
+  text-shadow: -1px 0 #CFB53B, 0 1px #CFB53B, 1px 0 #CFB53B, 0 -1px #CFB53B;
+  text-align: center;
+  margin: 0 0 8vh 0;
+  font-size: 3vh;
+  max-width: 50%;
 }
 
 .welcome-logo {
-  height: 50vh;
+  height: 55vh;
+  padding: 2vh 0 0 0;
   align-items: center;
 }
 
@@ -35,7 +59,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 8vh 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .arrow {
@@ -55,19 +79,38 @@
   height: 6vh;
   border-width: 4px;
   border-color: #CFB53B;
+  border-style: solid;
   padding: 0 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 2vh;
   text-align: center;
   color: #CFB53B;
+  background-color: rgba(0, 0, 0, 25%);
+}
+
+.learn-more:hover {
+  color: #ffffff;
   background-color: rgba(200, 200, 200, 33%);
 }
 
-/* #learn-more:hover {
-  background-color: rgba(255, 0, 0, 1);
-} */
+.learn-more:focus {
+  outline: 0;
+}
 
-/* #learn-more:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-              inset 2px 2px 3px rgba(0, 0, 0, .6);
-} */
+@media only screen and (max-width: 800px){
+  .welcome-screen {
+    margin-top: 64px;
+  }
+
+  .welcome-logo {
+    height: auto;
+    max-height: 50%;
+    max-width: 100%;
+    padding: 4vh 0 4vh 0;
+  }
+
+  .company-intro {
+    max-width: 90%;
+    font-size: 2.5vh;
+  }
+}

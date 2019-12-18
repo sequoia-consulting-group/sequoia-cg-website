@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class MenuButton extends Component {
   
   render() {
     const { menuItem, active } = this.props
     const route = menuItem.toLowerCase()
-    console.log(route === active)
     return(
       <div className={`menu-button ${route === active ? "active" : ""}`}>
-        <a href={`/${route}`}>{menuItem}</a>
+        <Link to={`/${route}`}>{menuItem}</Link>
       </div>
     )
   }

@@ -1,28 +1,49 @@
 import React, { Component } from 'react'
 // import posed from 'react-pose'
 // import SplitText from 'react-pose-text'
+import { Link } from 'react-router-dom'
 import './SiteMap.css'
+
+/* <div className="between-list-item"/>
+            <li className="site-list-item"><a href="/company">Company</a></li>
+            <div className="between-list-item"/>
+            <li className="site-list-item"><a href="/services">Services</a></li> */
 
 class SiteMap extends Component {
   render() {
     return (
-      <div className="site-map-container">
+      <div id="click-container" className="site-map-container">
         <div className="site-list-container">
           <ul className="site-list">
-            <li className="site-list-item"><a href="/home">Home</a></li>
+            <li className="site-list-item">
+              <Link 
+                className="site-list-link" 
+                to="/home"
+                onClick={window.scrollTo(0, 0)}
+              >
+                Home
+              </Link>
+            </li>
             <div className="between-list-item"/>
-            <li className="site-list-item"><a href="/company">Company</a></li>
-            <div className="between-list-item"/>
-            <li className="site-list-item"><a href="/services">Services</a></li>
-            <div className="between-list-item"/>
-            <li className="site-list-item"><a href="/contact">Contact</a></li>
+            <li className="site-list-item">
+              <Link 
+                className="site-list-link"
+                to="/contact"
+                onClick={window.scrollTo(0, 0)}
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
+        </div>
+        <div className="contact-info">
+          <p className="contact-name">Heidi Agostini, Ph.D., PMP</p>
+          <p className="contact-title">President</p>
+          <p className="contact-phone">(P) 240.818.8607 | (F) 240.356.2009</p>
+          <a className="contact-email" href="mailto:Heidiagostini@sequoiaconsultgroup.com">Heidiagostini@sequoiaconsultgroup.com</a>
         </div>
         <div className="sequoia-logo-container">
           <img className="sequoia-logo" src="/images/WhiteLogo-nobackground.png" alt="Logo Sequoia"/>
-        </div>
-        <div className="icons8-container">
-          <p className="icons8">Icons by <a className="icons8-link" target="_blank" rel="noopener noreferrer" href="https://icons8.com">Icons8</a></p>
         </div>
       </div>
     )

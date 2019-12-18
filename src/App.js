@@ -3,7 +3,7 @@ import './App.css';
 import { withRouter, Route, Switch, Redirect } from 'react-router-dom'
 import TitleBar from './containers/TitleBar/TitleBar'
 import WelcomeScreen from './containers/WelcomeScreen/WelcomeScreen'
-// import LearnMore from './containers/LearnMore/LearnMore'
+import ContactScreen from './containers/ContactScreen/ContactScreen'
 import SiteMap from './containers/SiteMap/SiteMap'
 
 class App extends Component {
@@ -24,9 +24,11 @@ class App extends Component {
             return (
               <Fragment>
                 <TitleBar active="contact"/>
+                <ContactScreen />
               </Fragment>
             )
           }}/>
+          <Route path="*" render={() => <Redirect to="/home"/>} />
         </Switch>
         <SiteMap />
       </div>
