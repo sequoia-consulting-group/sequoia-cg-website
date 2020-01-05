@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react'
 // import SplitText from 'react-pose-text'
 // import LearnMore from '../../components/LearnMore'
 import { Link, Element } from 'react-scroll'
+import Particles from 'react-particles-js'
 import './WelcomeScreen.css'
 import './LearnMore.css'
 
@@ -11,9 +12,50 @@ class WelcomeScreen extends Component {
     return (
       <Fragment>
         <div id="click-container" className="welcome-screen">
+          <div className="particles-container">
+            <Particles
+              style={{"position": "absolute", "left": "0"}}
+              params={{
+                "particles": {
+                    "number": {
+                        "value": 100,
+                        "density": {
+                          "enable": true,
+                          "value_area": 1500
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true
+                    },
+                    "opacity": {
+                      "value": "0.8",
+                    },
+                    "line_linked": {
+                      "opacity": "0.8"
+                    }
+                },
+                "interactivity": {
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        }
+                    }
+                },
+                
+              }}
+            />
+          </div>
           <img className="welcome-logo" src="/images/WhiteGoldBorderLogo-nobackground.png" alt="Logo Sequoia"/>
-          <h2 className="company-intro">
-            Proposal Development, Strategic Advice and Government Contracting Services
+          <h2 className="company-intro intro-1">
+            Proposal Development,
+          </h2>
+          <h2 className="company-intro intro-2">
+            Strategic Advice and
+          </h2>
+          <h2 className="company-intro intro-3">
+            Government Contracting Services
           </h2>
           <div className="more-info">
           <Link activeClass="active" className="" to="learn" offset={-64} spy={true} smooth={true} duration={500} >
