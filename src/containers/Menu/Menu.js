@@ -22,21 +22,24 @@ class Menu extends Component {
       // clickContainer.addEventListener("click", () => this.toggleMenu())
     } else {
       var menu = document.getElementById("myDropdown")
+      // var menuButton = document.querySelector(".menu-container")
       menu.classList.add("slide-out")
+      // menuButton.classList.add("change")
       setTimeout(() => {
         menu.classList.remove("slide-out")
+        // menuButton.classList.remove("change")
         this.setState({
           menuOpen: false
         })
       }
-      , 500);
+      , 500)
       // window.removeEventListener("mouseup", )
       // clickContainer.removeEventListener("click", () => this.toggleMenu())
     }
   }
 
   checkWindowClick = () => {
-    var menu = document.getElementById("myDropdown")
+    // var menu = document.getElementById("myDropdown")
     
   }
 
@@ -51,10 +54,10 @@ class Menu extends Component {
           <div className="bar3"></div>
         </div>
         <div id="myDropdown" className={`dropdown-content ${menuOpen ? "show" : "no-show"}`}>
-          <MenuButton menuItem="Home" active={active}/>
+          <MenuButton menuItem="Home" active={active} toggleMenu={() => this.toggleMenu()} />
           {/* <MenuButton menuItem="Company" active={active}/>
           <MenuButton menuItem="Services" active={active}/> */}
-          <MenuButton menuItem="Contact" active={active}/>
+          <MenuButton menuItem="Contact" active={active} toggleMenu={() => this.toggleMenu()}/>
         </div>
       </div>
     )

@@ -54,6 +54,16 @@
   }
 
   .logo-name{
-    width: 66%;
+    width: 75%;
+  }
+
+  #logo-sequoia {
+    height: 36px;
+    padding: 8px 0 0;
+  }
+  
+  #logo-cg {
+    height: 16px;
+    padding: 3px 0 1px;
   }
 }
