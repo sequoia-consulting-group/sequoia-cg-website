@@ -1,7 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
-import 'react-app-polyfill/ie9'
-import 'react-app-polyfill/ie11'
 
 import { withRouter, Route, Switch, Redirect } from 'react-router-dom'
 import TitleBar from './containers/TitleBar/TitleBar'
