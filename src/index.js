@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'react-app-polyfill/ie9'
-import 'react-app-polyfill/ie11'
+import 'core-js/es/map'
+import 'core-js/es/set'
 import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(

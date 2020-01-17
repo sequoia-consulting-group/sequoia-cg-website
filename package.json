@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "https://sequoiaconsultinggroup.web.app",
   "dependencies": {
+    "core-js": "^3.6.4",
     "emailjs-com": "^2.4.0",
     "react": "^16.9.0",
-    "react-app-polyfill": "^1.0.5",
     "react-dom": "^16.9.0",
     "react-particles-js": "^2.7.0",
     "react-router-dom": "^5.1.2",
