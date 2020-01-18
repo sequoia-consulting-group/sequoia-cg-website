@@ -14,7 +14,7 @@ class WelcomeScreen extends Component {
         <div id="click-container" className="welcome-screen">
           <div className="particles-container">
             <Particles
-              style={{"position": "absolute", "left": "0"}}
+              style={{"z-index": "0", "position": "absolute", "left": "0"}}
               params={{
                 "particles": {
                     "number": {
@@ -32,6 +32,7 @@ class WelcomeScreen extends Component {
                       "value": "0.8",
                     },
                     "line_linked": {
+                      // "enable": false,
                       "opacity": "0.8"
                     }
                 },
@@ -58,10 +59,10 @@ class WelcomeScreen extends Component {
             Government Contracting Services
           </h2>
           <div className="more-info">
-          <Link activeClass="active" className="" to="learn" offset={-64} spy={true} smooth={true} duration={500} >
+          <Link activeClass="active" className="" to="learn" offset={-64} spy={true} smooth={true} duration={500}>
             <button className="learn-more">Learn More</button>            
           </Link>
-          <Link activeClass="active" className="" to="learn" offset={-64} spy={true} smooth={true} duration={500} >
+          <Link activeClass="active" className="" to="learn" offset={-64} spy={true} smooth={true} duration={500}>
             <i className="arrow down"></i>
           </Link>
           </div>

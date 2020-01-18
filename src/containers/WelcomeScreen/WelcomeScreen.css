@@ -68,6 +68,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 0 0 0;
+  z-index: 1;
 }
 
 .arrow {
@@ -93,12 +94,12 @@
   font-size: 2vh;
   text-align: center;
   color: #CFB53B;
-  background-color: rgba(0, 0, 0, 25%);
+  background-color: rgba(0, 0, 0, 0.20);
 }
 
 .learn-more:hover {
   color: #ffffff;
-  background-color: rgba(200, 200, 200, 33%);
+  background-color: rgba(200, 200, 200, 0.33);
 }
 
 .learn-more:focus {
