@@ -24,17 +24,17 @@
   height: 95vh;
   width: 100%;
   margin-top: 80px;
-  background:  linear-gradient(
-    rgba(0, 0, 0, 33%),
-    rgba(0, 0, 0, 33%)
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.20),
+    rgba(0, 0, 0, 0.20)
   ), url(../../images/SequoiaBackground.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   /* IE */
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/SequoiaBackground.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/SequoiaBackground.jpg', sizingMethod='scale')";
+  /* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/SequoiaBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/SequoiaBackground.jpg', sizingMethod='scale')"; */
 }
 
 
