@@ -28,8 +28,8 @@
 }
 
 .learn-profile-photo {
-  max-width: 80%;
-  max-height: 40vh;
+  max-width: 400px;
+  max-height: 400px;
   height: auto;
   margin: auto;
   box-shadow: -4px 4px 8px #055520;
@@ -118,6 +118,11 @@
 @media only screen and (max-width: 800px){
   .learn-title-container {
     margin: 2vh 0;
+  }
+
+  .learn-profile-photo {
+    max-width: 300px;
+    max-width: 300px;
   }
   
   .learn-paragraph-container {
