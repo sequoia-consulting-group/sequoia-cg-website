@@ -51,7 +51,7 @@
 }
 
 .contact-info :nth-child(-n+2) {
-  text-align: end;
+  text-align: right;
   margin-right: 32px;
 }
 
