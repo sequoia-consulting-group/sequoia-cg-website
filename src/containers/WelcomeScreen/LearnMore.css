@@ -106,8 +106,8 @@
 }
 
 .learn-list-icon {
-  min-width: 32px;
-  max-height: 32x;
+  width: 32px;
+  height: 32x;
   color: rgba(200, 200, 0, 0.54);
 }
 
