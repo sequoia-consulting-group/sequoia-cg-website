@@ -28,14 +28,15 @@
 }
 
 .learn-profile-photo {
-  min-width: 400px;
+  min-width: 500px;
   min-height: 400px;
-  width: 400px;
+  width: 500px;
   height: 400px;
-  max-width: 400px;
+  max-width: 500px;
   max-height: 400px;
   margin: auto;
   box-shadow: -4px 4px 8px #055520;
+  overflow: hidden;
 }
 
 .learn-profile-name {
@@ -151,11 +152,11 @@
   }
 
   .learn-profile-photo {
-    min-width: 300px;
+    min-width: 375px;
     min-height: 300px;
-    width: 300px;
+    width: 375px;
     height: 300px;
-    max-width: 300px;
+    max-width: 375px;
     max-height: 300px;
   }
 
