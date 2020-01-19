@@ -23,6 +23,15 @@
   max-width: 64vw;
   padding: 16px;
   margin: auto;
+  text-align: center;
+}
+
+.message-sent {
+  max-width: 64vw;
+  padding: 16px;
+  margin: 0 auto;
+  color: #ff0000;
+  text-align: center;
 }
 
 .contact-form {

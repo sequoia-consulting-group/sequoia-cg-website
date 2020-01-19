@@ -9,6 +9,7 @@ class ContactScreen extends Component {
       name: "",
       email: "",
       message: "",
+      isSent: false
     }
     this.handleNameChange = this.handleNameChange.bind(this)
     this.handleEmailChange = this.handleEmailChange.bind(this)
@@ -32,13 +33,15 @@ class ContactScreen extends Component {
     event.preventDefault()
     const { name, email, message } = this.state
     const templateId = "sequoia_contact_template"
+    const to_name = "Heidi Agostini"
 
     console.log("submitting")
-    this.sendFeedback(templateId, { from_name: name, reply_to: email, message_html: message })
+    this.sendFeedback(templateId, { from_name: name, reply_to: email, message_html: message, to_name })
     this.setState({
       name: "",
       email: "",
-      message: ""
+      message: "",
+      isSent: true
     })
   }
 
@@ -52,7 +55,7 @@ class ContactScreen extends Component {
   }
 
   render() {
-    const { name, email, message } = this.state
+    const { name, email, message, isSent } = this.state
     return (
       <div id="click-container" className="contact-screen">
         <div>
@@ -128,6 +131,9 @@ class ContactScreen extends Component {
           </div> */}
           </form>
         </div>
+        <p className="message-sent" style={isSent ? {} : {display: "none"}}>
+          Your message has been sent!
+        </p>
       </div>
     )
   }
