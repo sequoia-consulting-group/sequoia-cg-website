@@ -62,7 +62,7 @@ class ContactScreen extends Component {
           <h2 className="contact-intro">
             Contact Us
           </h2>
-          <p className="contact-description">
+          <p contentEditable={true} className="contact-description">
             Please send us an email and we will respond to your message as soon as available
           </p>
         </div>

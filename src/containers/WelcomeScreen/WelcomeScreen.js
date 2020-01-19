@@ -18,7 +18,7 @@ class WelcomeScreen extends Component {
               params={{
                 "particles": {
                     "number": {
-                        "value": 200,
+                        "value": 300,
                         "density": {
                           "enable": true,
                           "value_area": 1500
@@ -79,7 +79,7 @@ class WelcomeScreen extends Component {
           </div>
           {/* <div className="learn-profile-container"> */}
             <div className="learn-profile-card">
-              <img className="learn-profile-photo" src="/images/blank-profile.jpg" alt="Heidi Agostini-Broadt"/>
+              <img className="learn-profile-photo" src="/images/Heidi-Agostini-39.jpg" alt="Heidi Agostini-Broadt"/>
               <h2 className="learn-profile-name">Heidi Agostini, Ph.D., PMP</h2>
               <h2 className="learn-profile-title">President</h2>
               <p contentEditable={true} className="learn-profile-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit ut aliquam purus sit amet luctus. Massa tincidunt dui ut ornare.</p>
