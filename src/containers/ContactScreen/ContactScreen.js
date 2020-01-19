@@ -46,7 +46,7 @@ class ContactScreen extends Component {
   }
 
   sendFeedback(templateId, variables) {
-    emailjs.send('gmail', templateId, variables, 'user_Bgk41z44zckUqty5Ag3V6')
+    emailjs.send('gmail', templateId, variables, 'user_do8WMjoHPIeyfsvaMhrIf')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
       }, (err) => {
