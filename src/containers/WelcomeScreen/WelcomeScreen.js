@@ -73,7 +73,7 @@ class WelcomeScreen extends Component {
             <h2 className="learn-title">About Us</h2>
             <div className="learn-title-underline"></div>
           </div>
-          <div className="learn-profile-container">
+          {/* <div className="learn-profile-container"> */}
             <div className="learn-profile-card">
               <img className="learn-profile-photo" src="/images/blank-profile.jpg" alt="Heidi Agostini-Broadt"/>
               <h2 className="learn-profile-name">Heidi Agostini, Ph.D., PMP</h2>
@@ -87,7 +87,7 @@ class WelcomeScreen extends Component {
               <h3 className="learn-profile-title">President</h3>
               <p className="learn-profile-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit ut aliquam purus sit amet luctus. Massa tincidunt dui ut ornare.</p>
             </div> */}
-          </div>
+          {/* </div> */}
 
           <div className="learn-title-container">
             <h2 className="learn-title">Why Sequoia Consulting?</h2>
@@ -96,7 +96,9 @@ class WelcomeScreen extends Component {
 
           <div className="learn-paragraph-container">
             <p className="learn-about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <img className="learn-about-photo" src="/images/ConferenceStock.jpg" alt="stock conference"/>
+            <div className="learn-about-photo-container">
+              <img className="learn-about-photo" src="/images/ConferenceStock.jpg" alt="stock conference"/>
+            </div>
           </div>
 
           <div className="learn-list-container">
