@@ -24,6 +24,15 @@ class WelcomeScreen extends Component {
                           "value_area": 1500
                         }
                     },
+                    // "color": {
+                    //   "value": "#fffe34"
+                    // },
+                    // "shape": {
+                    //   "type": "image",
+                    //   "image": {
+                    //     "src": "images/eco-24px.svg"
+                    //   }
+                    // },
                     "size": {
                         "value": 3,
                         "random": true

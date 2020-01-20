@@ -152,12 +152,12 @@
   }
 
   .learn-profile-photo {
-    min-width: 375px;
-    min-height: 300px;
-    width: 375px;
-    height: 300px;
-    max-width: 375px;
-    max-height: 300px;
+    min-width: 100%;
+    min-height: 80%;
+    width: 100%;
+    height: 80%;
+    max-width: 100%;
+    max-height: 80%;
   }
 
   .learn-profile-about {
