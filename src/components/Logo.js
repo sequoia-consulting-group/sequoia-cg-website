@@ -6,10 +6,10 @@ class Logo extends Component {
     return(
       <Link to="home">
         <div className="logo-container">
-          <img id="logo-tree" src="/images/TreeGreen-nobackground.png" alt="Logo Tree"/>
+          <img id="logo-tree" src="/images/TreeGreen-small.png" alt="Logo Tree"/>
           <div className="logo-name">
-            <img id="logo-sequoia" src="/images/SequoiaGold-nobackground.png" alt="Logo Sequoia"/>
-            <img id="logo-cg" src="/images/ConsultingGroupGreen-nobackground.png" alt="Logo Consulting Group"/>
+            <img id="logo-sequoia" src="/images/SequoiaGold-small.png" alt="Logo Sequoia"/>
+            <img id="logo-cg" src="/images/ConsultingGroupGreen-small.png" alt="Logo Consulting Group"/>
           </div>
         </div>
       </Link>

@@ -46,7 +46,8 @@ class WelcomeScreen extends Component {
                     },
                     "move": {
                       "direction": "bottom",
-                      "out_mode": "out"
+                      "out_mode": "out",
+                      "speed": 2
                     }
                 },
                 "interactivity": {
@@ -61,7 +62,7 @@ class WelcomeScreen extends Component {
               }}
             />
           </div>
-          <img className="welcome-logo" src="/images/WhiteGoldBorderLogo-nobackground.png" alt="Logo Sequoia"/>
+          <img className="welcome-logo" src="/images/WhiteGoldBorderLogo-small.png" alt="Logo Sequoia"/>
           <h2 className="company-intro intro-1">
             Proposal Development,
           </h2>
@@ -88,7 +89,7 @@ class WelcomeScreen extends Component {
           </div>
           {/* <div className="learn-profile-container"> */}
             <div className="learn-profile-card">
-              <img className="learn-profile-photo" src="/images/Heidi-Agostini-39.jpg" alt="Heidi Agostini-Broadt"/>
+              <img className="learn-profile-photo" src="/images/Heidi-Agostini-small.jpg" alt="Heidi Agostini"/>
               <h2 className="learn-profile-name">Heidi Agostini, Ph.D., PMP</h2>
               <h2 className="learn-profile-title">President</h2>
               <p contentEditable={true} className="learn-profile-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit ut aliquam purus sit amet luctus. Massa tincidunt dui ut ornare.</p>
@@ -110,7 +111,7 @@ class WelcomeScreen extends Component {
           <div className="learn-paragraph-container">
             <p contentEditable={true} className="learn-about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <div className="learn-about-photo-container">
-              <img className="learn-about-photo" src="/images/ConferenceStock.jpg" alt="stock conference"/>
+              <img className="learn-about-photo" src="/images/ConferenceStock-small.jpg" alt="stock conference"/>
             </div>
           </div>
 

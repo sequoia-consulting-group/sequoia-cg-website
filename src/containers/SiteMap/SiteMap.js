@@ -43,7 +43,7 @@ class SiteMap extends Component {
           <a className="contact-email" href="mailto:Heidiagostini@sequoiaconsultgroup.com">Heidiagostini@sequoiaconsultgroup.com</a>
         </div>
         <div className="sequoia-logo-container">
-          <img className="sequoia-logo" src="/images/WhiteLogo-nobackground.png" alt="Logo Sequoia"/>
+          <img className="sequoia-logo" src="/images/WhiteLogo-small.png" alt="Logo Sequoia"/>
         </div>
       </div>
     )
