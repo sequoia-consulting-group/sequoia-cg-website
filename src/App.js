@@ -12,8 +12,8 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route exact path="/" render={() => <Redirect to="/home"/>}/>
-          <Route exact path="/home" render={() => {
+          {/* <Route exact path="/" render={() => <Redirect to="/home"/>}/> */}
+          <Route exact path="/" render={() => {
             return (
               <Fragment>
                 <TitleBar active="home"/>
@@ -29,7 +29,7 @@ class App extends Component {
               </Fragment>
             )
           }}/>
-          <Route path="*" render={() => <Redirect to="/home"/>} />
+          <Route path="*" render={() => <Redirect to="/"/>} />
         </Switch>
         <SiteMap />
       </div>

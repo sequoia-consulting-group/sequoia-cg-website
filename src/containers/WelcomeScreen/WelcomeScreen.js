@@ -14,7 +14,7 @@ class WelcomeScreen extends Component {
         <div id="click-container" className="welcome-screen">
           <div className="particles-container">
             <Particles
-              style={{"z-index": "0", "position": "absolute", "left": "0"}}
+              style={{"zIndex": "0", "position": "absolute", "left": "0"}}
               params={{
                 "particles": {
                     "number": {
@@ -89,7 +89,7 @@ class WelcomeScreen extends Component {
           </div>
           {/* <div className="learn-profile-container"> */}
             <div className="learn-profile-card">
-              <img className="learn-profile-photo" src="/images/Heidi-Agostini-small.jpg" alt="Heidi Agostini"/>
+              <img className="learn-profile-photo" src="/images/Heidi-Agostini-mobile.jpg" alt="Heidi Agostini"/>
               <h2 className="learn-profile-name">Heidi Agostini, Ph.D., PMP</h2>
               <h2 className="learn-profile-title">President</h2>
               <p contentEditable={true} className="learn-profile-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit ut aliquam purus sit amet luctus. Massa tincidunt dui ut ornare.</p>
