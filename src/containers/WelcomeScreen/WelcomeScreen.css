@@ -47,12 +47,12 @@
   max-width: 50%;
 }
 
-.intro-1, .intro-2 {
+.intro-1, .intro-2, .intro-3 {
   margin: 0 0 1vh 0;
 }
 
-.intro-3 {
-  margin: 0 0 6vh 0;
+.intro-4 {
+  margin: 0 0 2vh 0;
 }
 
 .welcome-logo {
@@ -115,6 +115,10 @@
     ), url(../../images/SequoiaBackground-mobile.jpg) no-repeat center center; 
   }
 
+  .intro-4 {
+    margin-bottom: 4vh;
+  }
+
   .welcome-logo {
     height: auto;
     max-height: 50%;
@@ -123,7 +127,7 @@
   }
 
   .company-intro {
-    max-width: 90%;
+    max-width: 98%;
     font-size: 2.5vh;
   }
 }
