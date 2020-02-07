@@ -38,7 +38,7 @@ class SiteMap extends Component {
         </div>
         <div className="contact-info">
           <p className="contact-name">Heidi Agostini, Ph.D., PMP</p>
-          <p className="contact-title">President</p>
+          <p className="contact-title">Chief Operating Officer</p>
           <p className="contact-phone">(P) 240.818.8607 | (F) 240.356.2009</p>
           <a className="contact-email" href="mailto:Heidiagostini@sequoiaconsultgroup.com">Heidiagostini@sequoiaconsultgroup.com</a>
         </div>
