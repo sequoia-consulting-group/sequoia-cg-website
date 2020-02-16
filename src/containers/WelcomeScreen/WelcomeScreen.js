@@ -30,7 +30,7 @@ class WelcomeScreen extends Component {
                     // "shape": {
                     //   "type": "image",
                     //   "image": {
-                    //     "src": "images/eco-24px.svg"
+                    //     "src": "images/blossom-flat.png"
                     //   }
                     // },
                     "size": {
@@ -42,12 +42,14 @@ class WelcomeScreen extends Component {
                     },
                     "line_linked": {
                       "enable": false,
-                      "opacity": "0.8"
+                      // "opacity": "0.8"
                     },
                     "move": {
+                      // "direction": "bottom-right",
                       "direction": "bottom",
                       "out_mode": "out",
-                      "speed": 2
+                      "speed": 2,
+                      "random": true
                     }
                 },
                 "interactivity": {
@@ -63,18 +65,18 @@ class WelcomeScreen extends Component {
             />
           </div>
           <img className="welcome-logo" src="/images/WhiteGoldBorderLogo-small.png" alt="Logo Sequoia"/>
-          <h2 className="company-intro intro-1">
+          <h1 className="company-intro intro-1">
             White Paper & Proposal Development,
-          </h2>
-          <h2 className="company-intro intro-2">
+          </h1>
+          <h1 className="company-intro intro-2">
             Strategic Advice and
-          </h2>
-          <h2 className="company-intro intro-3">
+          </h1>
+          <h1 className="company-intro intro-3">
             Government Program Management
-          </h2>
-          <h2 className="company-intro intro-4">
+          </h1>
+          <h1 className="company-intro intro-4">
             for DOD, BARDA and NIH
-          </h2>
+          </h1>
           <div className="more-info">
           <Link activeClass="active" className="" to="learn" offset={-64} spy={true} smooth={true} duration={500}>
             <button className="learn-more">Learn More</button>            

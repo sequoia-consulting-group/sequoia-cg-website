@@ -139,6 +139,7 @@
 }
 
 .learn-list-icon {
+  margin: auto 0;
   min-width: 32px;
   min-height: 32px;
   width: 32px;
