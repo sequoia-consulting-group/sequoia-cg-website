@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import ReactGA from 'react-ga';
 import './App.css';
 
 import { withRouter, Route, Switch, Redirect } from 'react-router-dom'
@@ -6,6 +7,10 @@ import TitleBar from './containers/TitleBar/TitleBar'
 import WelcomeScreen from './containers/WelcomeScreen/WelcomeScreen'
 import ContactScreen from './containers/ContactScreen/ContactScreen'
 import SiteMap from './containers/SiteMap/SiteMap'
+
+const trackingId = "UA-158882003-1";
+ReactGA.initialize(trackingId);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
   render() {
