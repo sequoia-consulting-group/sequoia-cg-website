@@ -4,65 +4,89 @@ import React, { Component, Fragment } from 'react'
 // import LearnMore from '../../components/LearnMore'
 import { Link, Element } from 'react-scroll'
 import Particles from 'react-particles-js'
+import Blossom from '../../components/Sakura/Sakura'
 import './WelcomeScreen.css'
 import './LearnMore.css'
 
 class WelcomeScreen extends Component {
+  constructor() {
+    super()
+    this.state = {
+      startBlossom: false
+    }
+  }
+
+  componentDidMount () {
+    this.setState({
+      startBlossom: true
+    })
+  }
+
+  componentWillUnmount() {
+    this.setState({
+      startBlossom: false
+    })
+  }
+
   render() {
+    const { startBlossom } = this.state
     return (
       <Fragment>
         <div id="click-container" className="welcome-screen">
           <div className="particles-container">
-            <Particles
-              style={{"zIndex": "0", "position": "absolute", "left": "0"}}
-              params={{
-                "particles": {
-                    "number": {
-                        "value": 300,
-                        "density": {
-                          "enable": true,
-                          "value_area": 1500
-                        }
-                    },
-                    // "color": {
-                    //   "value": "#fffe34"
-                    // },
-                    // "shape": {
-                    //   "type": "image",
-                    //   "image": {
-                    //     "src": "images/blossom-flat.png"
-                    //   }
-                    // },
-                    "size": {
-                        "value": 3,
-                        "random": true
-                    },
-                    "opacity": {
-                      "value": "0.8",
-                    },
-                    "line_linked": {
-                      "enable": false,
-                      // "opacity": "0.8"
-                    },
-                    "move": {
-                      // "direction": "bottom-right",
-                      "direction": "bottom",
-                      "out_mode": "out",
-                      "speed": 2,
-                      "random": true
-                    }
-                },
-                "interactivity": {
-                    "events": {
-                        "onhover": {
+            {window.innerWidth >= 800 ? <Blossom startBlossom={startBlossom}/> :
+              <Particles
+                style={{"zIndex": "0", "position": "absolute", "left": "0"}}
+                params={{
+                  "particles": {
+                      "number": {
+                          "value": 100,
+                          // "value": 300,
+                          "density": {
                             "enable": true,
-                            "mode": "repulse"
-                        }
-                    }
-                },
-                
-              }}
-            />
+                            "value_area": 1500
+                          }
+                      },
+                      "color": {
+                        "value": "#fffe34"
+                      },
+                      // "shape": {
+                      //   "type": "image",
+                      //   "image": {
+                      //     "src": "images/blossom-flat.png"
+                      //   }
+                      // },
+                      "size": {
+                          // "value": 10,
+                          "value": 3,
+                          "random": true
+                      },
+                      "opacity": {
+                        "value": "0.8",
+                      },
+                      "line_linked": {
+                        "enable": false,
+                      },
+                      "move": {
+                        "direction": "top-right",
+                        // "direction": "bottom",
+                        "out_mode": "out",
+                        "speed": 2,
+                        "random": true
+                      }
+                  },
+                  "interactivity": {
+                      "events": {
+                          "onhover": {
+                              "enable": true,
+                              "mode": "repulse"
+                          }
+                      }
+                  },
+                  
+                }}
+              />
+            }
           </div>
           <img className="welcome-logo" src="/images/WhiteGoldBorderLogo-small.png" alt="Logo Sequoia"/>
           <h1 className="company-intro intro-1">

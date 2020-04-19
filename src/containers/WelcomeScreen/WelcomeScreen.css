@@ -76,6 +76,7 @@
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 4px;
+  cursor: pointer;
 }
 
 .down {
@@ -100,6 +101,7 @@
 .learn-more:hover {
   color: #ffffff;
   background-color: rgba(200, 200, 200, 0.33);
+  cursor: pointer;
 }
 
 .learn-more:focus {
