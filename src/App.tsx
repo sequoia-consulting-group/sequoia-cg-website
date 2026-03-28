@@ -1,47 +1,47 @@
 import { Fragment } from "react";
-import ReactGA from "react-ga";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import * as ga from "./ga";
 import "./App.css";
 
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import TitleBar from "./containers/TitleBar/TitleBar";
 import WelcomeScreen from "./containers/WelcomeScreen/WelcomeScreen";
 import ContactScreen from "./containers/ContactScreen/ContactScreen";
 import SiteMap from "./containers/SiteMap/SiteMap";
 
-const trackingId = "UA-158882003-1";
-ReactGA.initialize(trackingId);
-ReactGA.pageview(window.location.pathname + window.location.search);
+ga.initialize();
 
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    ga.pageview(location.pathname + location.search);
+  }, [location]);
+
   return (
     <div className="App">
-      <Switch>
+      <Routes>
         <Route
-          exact
           path="/"
-          render={() => {
-            return (
-              <Fragment>
-                <TitleBar active="home" />
-                <WelcomeScreen />
-              </Fragment>
-            );
-          }}
+          element={
+            <Fragment>
+              <TitleBar active="home" />
+              <WelcomeScreen />
+            </Fragment>
+          }
         />
         <Route
-          exact
           path="/contact"
-          render={() => {
-            return (
-              <Fragment>
-                <TitleBar active="contact" />
-                <ContactScreen />
-              </Fragment>
-            );
-          }}
+          element={
+            <Fragment>
+              <TitleBar active="contact" />
+              <ContactScreen />
+            </Fragment>
+          }
         />
-        <Route path="*" render={() => <Redirect to="/" />} />
-      </Switch>
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
       <SiteMap />
     </div>
   );

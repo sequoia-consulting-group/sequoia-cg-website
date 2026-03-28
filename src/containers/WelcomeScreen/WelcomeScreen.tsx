@@ -3,7 +3,9 @@ import { useState, useEffect, Fragment } from "react";
 // import SplitText from 'react-pose-text'
 // import LearnMore from '../../components/LearnMore'
 import { Link, Element } from "react-scroll";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
+import { Engine } from "tsparticles-engine";
+import { loadSlim } from "tsparticles-slim";
 import Blossom from "../../components/Sakura/Sakura";
 import "./WelcomeScreen.css";
 import "./LearnMore.css";
@@ -19,6 +21,10 @@ const WelcomeScreen = () => {
     };
   }, []);
 
+  const particlesInit = async (engine: Engine) => {
+    await loadSlim(engine);
+  };
+
   return (
     <Fragment>
       <div id="click-container" className="welcome-screen">
@@ -27,12 +33,12 @@ const WelcomeScreen = () => {
             <Blossom startBlossom={startBlossom} />
           ) : (
             <Particles
+              init={particlesInit}
               style={{ zIndex: "0", position: "absolute", left: "0" }}
-              params={{
+              options={{
                 particles: {
                   number: {
                     value: 100,
-                    // "value": 300,
                     density: {
                       enable: true,
                       value_area: 1500,
@@ -41,34 +47,28 @@ const WelcomeScreen = () => {
                   color: {
                     value: "#fffe34",
                   },
-                  // "shape": {
-                  //   "type": "image",
-                  //   "image": {
-                  //     "src": "images/blossom-flat.png"
-                  //   }
-                  // },
                   size: {
-                    // "value": 10,
                     value: 3,
                     random: true,
                   },
                   opacity: {
                     value: 0.8,
                   },
-                  line_linked: {
+                  links: {
                     enable: false,
                   },
                   move: {
                     direction: "top-right",
-                    // "direction": "bottom",
-                    out_mode: "out",
+                    outModes: {
+                      default: "out",
+                    },
                     speed: 2,
                     random: true,
                   },
                 },
                 interactivity: {
                   events: {
-                    onhover: {
+                    onHover: {
                       enable: true,
                       mode: "repulse",
                     },

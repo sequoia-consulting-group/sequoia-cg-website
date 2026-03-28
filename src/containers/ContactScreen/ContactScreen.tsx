@@ -1,6 +1,9 @@
 import { useState, ChangeEvent, FormEvent } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import "./ContactScreen.css";
+
+// Initialize EmailJS with your public key
+emailjs.init("user_do8WMjoHPIeyfsvaMhrIf");
 
 const ContactScreen = () => {
   const [name, setName] = useState("");
@@ -21,16 +24,14 @@ const ContactScreen = () => {
   };
 
   const sendFeedback = (templateId: string, variables: any) => {
-    emailjs
-      .send("gmail", templateId, variables, "user_do8WMjoHPIeyfsvaMhrIf")
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (err) => {
-          console.log("FAILED...", err);
-        },
-      );
+    emailjs.send("gmail", templateId, variables).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      (err) => {
+        console.log("FAILED...", err);
+      },
+    );
   };
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {

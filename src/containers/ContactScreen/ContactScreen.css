@@ -5,7 +5,7 @@
   min-height: 85vh;
   width: 100%;
   margin-top: 80px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -54,14 +54,15 @@
 .contact-form .form-field .input-field {
   height: 32px;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .contact-form .label-content {
   margin-bottom: 4px;
 }
 
-.contact-form .input-field, .contact-form .text-area {
+.contact-form .input-field,
+.contact-form .text-area {
   display: flex;
   flex: 1;
   width: 100%;
@@ -70,10 +71,11 @@
   border-color: rgb(217, 217, 217);
   border-radius: 4px;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.contact-form .input-field:focus, .contact-form .text-area:focus {
+.contact-form .input-field:focus,
+.contact-form .text-area:focus {
   outline: none !important;
   box-shadow: 0 0 8px #055520;
 }
@@ -85,24 +87,39 @@
 .contact-form .submit-button {
   min-width: fit-content;
   font-size: 16px;
-  height: 32px;
-  border-radius: 4px;
-  border-style: solid;
-  padding: 0 32px;
-  align-self: flex-end;
-  border-width: 4px;
-  border-color: #CFB53B;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  height: 44px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 36px;
+  align-self: center;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
-  color: #055520;
-  background-color: #ffffff;
+  color: #ffffff;
+  background: linear-gradient(135deg, #cfb53b 0%, #e8d659 100%);
+  box-shadow: 0 4px 12px rgba(207, 181, 59, 0.3);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
 }
 
 .contact-form .submit-button:hover {
-  background-color: rgb(207, 181, 59, 50%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(207, 181, 59, 0.5);
+  background: linear-gradient(135deg, #e8d659 0%, #f5e789 100%);
 }
 
-@media only screen and (max-width: 800px){
+.contact-form .submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(207, 181, 59, 0.3);
+}
+
+.contact-form .submit-button:focus {
+  outline: 2px solid #e8d659;
+  outline-offset: 2px;
+}
+
+@media only screen and (max-width: 800px) {
   .contact-screen {
     margin-top: 64px;
   }
