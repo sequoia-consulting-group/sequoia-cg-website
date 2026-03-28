@@ -4,18 +4,18 @@
   "private": true,
   "homepage": "https://www.sequoiaconsultgroup.com",
   "dependencies": {
-    "core-js": "^3.6.4",
     "@emailjs/browser": "^4.2.0",
+    "core-js": "^3.6.4",
     "i18next": "^19.1.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-ga4": "^2.1.0",
     "react-i18next": "^11.3.2",
-    "react-tsparticles": "^2.12.0",
-    "tsparticles": "^2.12.0",
     "react-router-dom": "^6.20.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.10",
+    "react-tsparticles": "^2.12.0",
+    "tsparticles": "^2.12.0",
     "typescript": "^5.2.2"
   },
   "scripts": {
@@ -30,17 +30,17 @@
   },
   "devDependencies": {
     "@eslint/js": "^8.56.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.33.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@types/react-scroll": "^1.8.5",
     "@types/react-router-dom": "^5.3.3",
-    "@types/jest": "^29.5.0",
-    "@types/node": "^20.0.0"
+    "@types/react-scroll": "^1.8.5",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "browserslist": {
     "production": [
