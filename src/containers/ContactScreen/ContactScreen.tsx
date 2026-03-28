@@ -55,7 +55,7 @@ const ContactScreen = () => {
     <div id="click-container" className="contact-screen">
       <div>
         <h2 className="contact-intro">Contact Us</h2>
-        <p contentEditable={true} className="contact-description">
+        <p className="contact-description">
           Please send us an email and we will respond to your message as soon as
           available
         </p>
@@ -107,19 +107,6 @@ const ContactScreen = () => {
           <button className="submit-button" type="submit">
             Send
           </button>
-          {/* 
-          <div>
-            { window.location.hash === '#success' &&
-              <div id="success">
-                <p>Your message has been sent!</p>
-              </div>
-            }
-            { window.location.hash === '#error' &&
-              <div id="error">
-                <p>An error occured while submitting the form.</p>
-              </div>
-            }
-          </div> */}
         </form>
       </div>
       <p className="message-sent" style={isSent ? {} : { display: "none" }}>
