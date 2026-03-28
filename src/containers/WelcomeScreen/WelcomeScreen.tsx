@@ -158,10 +158,10 @@ const WelcomeScreen = () => {
             opportunities.
             <br />
             <br />
-            Whatever the size of your project, whether it's a white paper or a
-            full proposal, we can help you reach your funding and business
+            Whatever the size of your project, whether it&apos;s a white paper
+            or a full proposal, we can help you reach your funding and business
             development goals. We will give you an honest assessment of your
-            project's potential for funding based on the current open Broad
+            project&apos;s potential for funding based on the current open Broad
             Agency Announcements and grants.
             <br />
             <br />

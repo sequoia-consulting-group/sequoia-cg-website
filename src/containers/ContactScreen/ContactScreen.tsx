@@ -24,14 +24,7 @@ const ContactScreen = () => {
   };
 
   const sendFeedback = (templateId: string, variables: any) => {
-    emailjs.send("gmail", templateId, variables).then(
-      (response) => {
-        console.log("SUCCESS!", response.status, response.text);
-      },
-      (err) => {
-        console.log("FAILED...", err);
-      },
-    );
+    emailjs.send("gmail", templateId, variables);
   };
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -39,7 +32,6 @@ const ContactScreen = () => {
     const templateId = "sequoia_contact_template";
     const to_name = "Heidi Agostini";
 
-    console.log("submitting");
     sendFeedback(templateId, {
       from_name: name,
       reply_to: email,

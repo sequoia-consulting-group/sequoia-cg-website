@@ -11,20 +11,18 @@ interface SakuraInstance {
   [key: string]: any;
 }
 
-var Sakura: any = function (
+const Sakura: any = function (
   this: SakuraInstance,
   selector: string,
   options?: any,
 ) {
-  var _this: any = this;
-
   if (typeof selector === "undefined") {
     throw new Error("No selector present. Define an element.");
   }
 
   this.el = document.querySelector(selector); // Defaults for the option object, which gets extended below.
 
-  var defaults = {
+  const defaults = {
     className: "sakura",
     // Classname of the petal. This corresponds with the css.
     fallSpeed: 1,
@@ -47,10 +45,10 @@ var Sakura: any = function (
     ],
   }; // Merge defaults with user options.
 
-  var extend = function extend(originalObj: any, newObj: any) {
+  const extend = function extend(originalObj: any, newObj: any) {
     Object.keys(originalObj).forEach(function (key) {
       if (newObj && Object.prototype.hasOwnProperty.call(newObj, key)) {
-        var origin = originalObj;
+        const origin = originalObj;
         origin[key] = newObj[key];
       }
     });
@@ -69,11 +67,11 @@ var Sakura: any = function (
     return Math.floor(Math.random() * (max - min + 1)) + min;
   } // Check for animation events.
 
-  var prefixes = ["webkit", "moz", "MS", "o", ""];
+  const prefixes = ["webkit", "moz", "MS", "o", ""];
 
   function PrefixedEvent(element: any, type: string, callback: any) {
-    for (var p = 0; p < prefixes.length; p += 1) {
-      var animType = type;
+    for (let p = 0; p < prefixes.length; p += 1) {
+      let animType = type;
 
       if (!prefixes[p]) {
         animType = type.toLowerCase();
@@ -84,7 +82,7 @@ var Sakura: any = function (
   } // Check if the element is in the viewport.
 
   function elementInViewport(el: any) {
-    var rect = el.getBoundingClientRect();
+    const rect = el.getBoundingClientRect();
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
@@ -94,14 +92,14 @@ var Sakura: any = function (
     );
   }
 
-  this.createPetal = function () {
-    if (_this.el.dataset.sakuraAnimId) {
-      setTimeout(function () {
-        window.requestAnimationFrame(_this.createPetal);
-      }, _this.settings.delay);
+  this.createPetal = () => {
+    if (this.el.dataset.sakuraAnimId) {
+      setTimeout(() => {
+        window.requestAnimationFrame(this.createPetal);
+      }, this.settings.delay);
     } // Name the animations. These have to match the animations in the CSS file.
 
-    var animationNames = {
+    const animationNames = {
       blowAnimations: [
         "blow-soft-left",
         "blow-medium-left",
@@ -121,15 +119,15 @@ var Sakura: any = function (
       ],
     }; // Get one random animation of each type and randomize fall time of the petals
 
-    var blowAnimation = randomArrayElem(animationNames.blowAnimations);
-    var swayAnimation = randomArrayElem(animationNames.swayAnimations);
+    const blowAnimation = randomArrayElem(animationNames.blowAnimations);
+    const swayAnimation = randomArrayElem(animationNames.swayAnimations);
 
-    var fallTime =
+    const fallTime =
       (document.documentElement.clientHeight * 0.007 +
         Math.round(Math.random() * 5)) *
-      _this.settings.fallSpeed; // Create animations
+      this.settings.fallSpeed; // Create animations
 
-    var animationsArr = [
+    const animationsArr = [
       "fall ".concat(fallTime.toString(), "s linear 0s 1"),
       ""
         .concat(blowAnimation, " ")
@@ -141,14 +139,14 @@ var Sakura: any = function (
         .concat(swayAnimation, " ")
         .concat(randomInt(2, 4).toString(), "s linear 0s infinite"),
     ];
-    var animations = animationsArr.join(", "); // Create petal and give it a random size.
+    const animations = animationsArr.join(", "); // Create petal and give it a random size.
 
-    var petal = document.createElement("div");
-    petal.classList.add(_this.settings.className);
-    var height = randomInt(_this.settings.minSize, _this.settings.maxSize);
-    var width = height - Math.floor(randomInt(0, _this.settings.minSize) / 3); // Get a random color.
+    const petal = document.createElement("div");
+    petal.classList.add(this.settings.className);
+    const height = randomInt(this.settings.minSize, this.settings.maxSize);
+    const width = height - Math.floor(randomInt(0, this.settings.minSize) / 3); // Get a random color.
 
-    var color = randomArrayElem(_this.settings.colors);
+    const color = randomArrayElem(this.settings.colors);
     petal.style.background = "linear-gradient("
       .concat(color.gradientColorDegree.toString(), "deg, ")
       .concat(color.gradientColorStart, ", ")
@@ -158,8 +156,8 @@ var Sakura: any = function (
     petal.style.borderRadius = ""
       .concat(
         randomInt(
-          _this.settings.maxSize,
-          _this.settings.maxSize + Math.floor(Math.random() * 10),
+          this.settings.maxSize,
+          this.settings.maxSize + Math.floor(Math.random() * 10),
         ).toString(),
         "px ",
       )
@@ -175,29 +173,29 @@ var Sakura: any = function (
     );
     petal.style.width = "".concat(width.toString(), "px"); // Remove petals of which the animation ended.
 
-    PrefixedEvent(petal, "AnimationEnd", function () {
+    PrefixedEvent(petal, "AnimationEnd", () => {
       if (!elementInViewport(petal)) {
         petal.remove();
       }
     }); // Remove petals that float out of the viewport.
 
-    PrefixedEvent(petal, "AnimationIteration", function () {
+    PrefixedEvent(petal, "AnimationIteration", () => {
       if (!elementInViewport(petal)) {
         petal.remove();
       }
     }); // Add the petal to the target element.
 
-    _this.el.appendChild(petal);
+    this.el.appendChild(petal);
   };
 
   this.el.setAttribute(
     "data-sakura-anim-id",
-    window.requestAnimationFrame(this.createPetal),
+    window.requestAnimationFrame(this.createPetal as any),
   );
 };
 
 Sakura.prototype.start = function () {
-  var animId = this.el.dataset.sakuraAnimId;
+  const animId = this.el.dataset.sakuraAnimId;
 
   if (!animId) {
     this.el.setAttribute(
@@ -209,12 +207,8 @@ Sakura.prototype.start = function () {
   }
 };
 
-Sakura.prototype.stop = function () {
-  var _this2 = this;
-
-  var graceful =
-    arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-  var animId = this.el.dataset.sakuraAnimId;
+Sakura.prototype.stop = function (graceful = false) {
+  const animId = this.el.dataset.sakuraAnimId;
 
   if (animId) {
     window.cancelAnimationFrame(animId);
@@ -224,8 +218,8 @@ Sakura.prototype.stop = function () {
   // This way the petals won't be removed abruptly.
 
   if (!graceful) {
-    setTimeout(function () {
-      var petals = document.getElementsByClassName(_this2.settings.className);
+    setTimeout(() => {
+      const petals = document.getElementsByClassName(this.settings.className);
 
       while (petals.length > 0) {
         petals[0].parentNode?.removeChild(petals[0]);
