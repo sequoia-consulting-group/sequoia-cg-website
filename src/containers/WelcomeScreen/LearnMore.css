@@ -5,18 +5,9 @@
   min-height: 85vh;
   width: 100%;
   position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 60px 0;
 }
-
-/* .learn-more-container > div {
-  flex: 1;
-} */
-
-/* .learn-profile-container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: space-around;
-} */
 
 .learn-profile-card {
   max-width: 80%;
@@ -24,7 +15,22 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
+  font-family:
+    "Segoe UI",
+    "Open Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.learn-profile-card:hover {
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
 }
 
 .learn-profile-photo {
@@ -35,69 +41,108 @@
   max-width: 500px;
   max-height: 400px;
   margin: auto;
-  box-shadow: -4px 4px 8px #055520;
+  box-shadow: 0 4px 20px rgba(5, 85, 32, 0.15);
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .learn-profile-name {
-  margin: 2vh 0;
+  margin: 24px 0 8px 0;
   text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #055520;
+  letter-spacing: 0.3px;
 }
 
 .learn-profile-title {
-  margin: 0 0 2vh 0;
+  margin: 0 0 16px 0;
   text-align: center;
+  font-size: 16px;
+  color: #e8d659;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .learn-profile-about {
   max-width: 50%;
   margin: auto 25%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  line-height: 26px;
+  font-family:
+    "Segoe UI",
+    "Open Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  line-height: 28px;
   text-align: center;
+  color: #4a4a4a;
+  font-weight: 400;
 }
-  
+
 .learn-title-container {
   max-width: 66%;
-  margin: 4vh 0;
+  margin: 40px 0;
 }
 
 .learn-title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 32px;
+  font-family:
+    "Segoe UI",
+    "Open Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  font-size: 36px;
   margin: 0 0 0 0;
   text-align: center;
+  font-weight: 700;
+  color: #055520;
+  letter-spacing: -0.5px;
 }
 
 .learn-title-underline {
-  height: 4px;
-  background-color: #055520;
+  height: 3px;
+  background: linear-gradient(90deg, #e8d659 0%, #055520 100%);
+  margin-top: 16px;
+  border-radius: 1.5px;
 }
 
 .learn-paragraph-container {
-  font-family: 'Open Sans', sans-serif;
+  font-family:
+    "Segoe UI",
+    "Open Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
   min-width: 80%;
   min-height: 53.33%;
   width: 80%;
   height: 53.33%;
   max-width: 80%;
   max-height: 53.33%;
-  padding: 2vh 0;
-  font-size: 18px;
+  padding: 20px 0;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
 .learn-about-paragraph {
   padding: 0;
   width: 49%;
-  margin: auto 5%;
-  line-height: 26px;
+  margin: auto 0;
+  line-height: 28px;
+  color: #4a4a4a;
+  font-weight: 400;
 }
 
-.learn-about-photo-container{
+.learn-about-photo-container {
   min-width: 49%;
   min-height: 33.33%;
   width: 49%;
@@ -108,20 +153,30 @@
 }
 
 .learn-about-photo {
-  min-width: 80%;
+  min-width: 100%;
   min-height: 100%;
-  width: 80%;
+  width: 100%;
   height: 100%;
-  max-width: 80%;
+  max-width: 100%;
   max-height: 100%;
-  margin: auto 10%;
-  box-shadow: -4px 4px 8px #055520;
+  margin: auto;
+  box-shadow: 0 4px 20px rgba(5, 85, 32, 0.15);
+  border-radius: 8px;
 }
 
 .learn-list-container {
-  font-family: 'Open Sans', sans-serif;
-  padding: 0 0;
+  font-family:
+    "Segoe UI",
+    "Open Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  padding: 40px;
   max-width: 80%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 40px;
 }
 
 .learn-list {
@@ -130,78 +185,103 @@
   list-style: none;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 
 .learn-list-item-container {
   display: flex;
   width: 50%;
-  padding: 2vh 0;
+  padding: 20px 0;
+  align-items: flex-start;
+  transition: transform 0.3s ease;
+}
+
+.learn-list-item-container:hover {
+  transform: translateX(4px);
 }
 
 .learn-list-icon {
-  margin: auto 0;
-  min-width: 32px;
-  min-height: 32px;
-  width: 32px;
-  height: 32px;
-  max-width: 32px;
-  max-height: 32px;
-  color: rgba(200, 200, 0, 0.54);
+  margin: 0 16px 0 0;
+  min-width: 28px;
+  min-height: 28px;
+  width: 28px;
+  height: 28px;
+  max-width: 28px;
+  max-height: 28px;
+  color: #e8d659;
+  flex-shrink: 0;
 }
 
 .learn-list-item {
-  margin: auto 0 auto 1vw;
+  margin: 0;
+  color: #4a4a4a;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 15px;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
+  .learn-more-container {
+    padding: 40px 0;
+  }
+
   .learn-title-container {
-    margin: 2vh 0;
+    margin: 24px 0;
+    max-width: 90%;
+  }
+
+  .learn-title {
+    font-size: 28px;
+  }
+
+  .learn-profile-card {
+    max-width: 90%;
+    padding: 24px;
   }
 
   .learn-profile-photo {
     min-width: 100%;
-    min-height: 80%;
+    min-height: 300px;
     width: 100%;
-    height: 80%;
+    height: 300px;
     max-width: 100%;
-    max-height: 80%;
+    max-height: 300px;
   }
 
   .learn-profile-about {
     max-width: 100%;
     margin: auto;
-  }
-  
-  .learn-paragraph-container {
-    flex-direction: column;
-    padding: 0;
+    font-size: 15px;
+    line-height: 24px;
   }
 
-  .learn-about-paragraph, .learn-profile-about {
+  .learn-paragraph-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .learn-about-paragraph {
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
-    margin: 2% auto;
+    margin: 0;
   }
 
   .learn-about-photo-container {
     min-width: 100%;
-    min-height: 66.66%;
+    min-height: auto;
     width: 100%;
-    height: 66.66%;
+    height: 250px;
     max-width: 100%;
-    max-height: 66.66%;
-    margin: 2% auto;
+    max-height: none;
+    margin: 0;
   }
 
-  .learn-about-photo {
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
+  .learn-list-container {
+    max-width: 90%;
+    padding: 24px;
+    margin-top: 24px;
   }
 
   .learn-list {
@@ -209,7 +289,7 @@
   }
 
   .learn-list-item-container {
-    padding: 1vh 0;
+    padding: 12px 0;
     width: 100%;
   }
 }
